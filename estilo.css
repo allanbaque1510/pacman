@@ -1,0 +1,117 @@
+@font-face{
+	font-family: "Arcade";
+	src: url("Fonts/ARCADECLASSIC.TTF");
+}
+@font-face{
+	font-family: "crackman";
+	src: url("Fonts/crackman.regular.ttf");
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+background: rgb(2,18,43);
+background: radial-gradient(circle, rgba(2,18,43,1) 3%, rgba(1,17,36,1) 46%, rgba(0,1,6,1) 100%);
+}
+.cabecera{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px 5px;
+	background: rgb(30,0,78);
+	background: radial-gradient(circle, rgba(30,0,78,1) 8%, rgba(10,2,41,1) 46%, rgba(3,0,6,1) 100%);
+	color: #fff;
+	justify-content: center;
+	box-shadow:  0 0 8px #320777,0 0 10px #320777,0 0 13px #320777,0 0 15px #320777;
+	
+}
+.cabecera h3{
+	text-shadow:0 0 8px #c76af1,0 0 10px #c76af1,0 0 13px #c76af1,0 0 15px #c76af1;
+	font-size: 55px;
+	font-family: 'Arcade';
+	letter-spacing: 3px;
+}
+.pacman{
+	position: fixed;
+	left: 40%;
+	bottom: 30%;
+	font-size: 300px;
+	color: #fff;
+	margin-top: 12%;
+	align-items: center;
+	text-align: center;
+}
+.bx-game:hover{
+	text-shadow: 0 0  80px #6af1b9;
+	transition-duration: 1s;
+}
+.bx-game{
+	color: #b4fbff;
+	text-shadow: 0 0 10px #6af19c, 0 0 15px #6af19c, 0 0 20px #6af19c;
+	transition-duration: 1s;
+	cursor: pointer;
+}
+.bxs-game{
+	color: #b4fbff;
+	text-shadow: 0 0 10px #6af19c, 0 0 15px #6af19c, 0 0 20px #6af19c;
+	transition-duration: 1s;
+	cursor: pointer;
+}
+
+.bxs-game:hover{
+	text-shadow: 0 0  80px #6af1b9;
+	transition-duration: 1s;
+}
+.go{
+	position: fixed;
+	top: 80%;
+	left:44%; 
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	text-shadow: 0 0 3px #f16a85,0 0 5px #f16a85,0 0 10px #f16a85;
+	cursor: pointer;
+}
+
+.go a{
+	text-decoration: none;
+	font-size: 40px;
+	padding: 8px 45px;
+	font-family: "crackman";
+	color: #f16a85;
+	border-radius: 10px;
+	border: 1px solid;
+	box-shadow: 0 0 3px #f16a85, inset 0 0 9px #f16a85,0 0 15px #f16a85;
+}
+
+.go a:hover{
+	border-color: #f16a85;
+	color: #fff;
+	box-shadow: 0 0 10px #6af1b9, 0 0 20px #f16a85;
+	background-color: #f16a85;
+	transition-duration: 1s;
+
+}
+.game1{
+	margin: 20px;
+	position: fixed;
+	left: 37%;
+	opacity: 0;
+}
+.pacman-oculto{
+	margin-top: 10%;
+	margin-left: 41%;
+	transition-property: opacity;
+	transition-duration: 1s;
+	transition-duration: 3s;
+	opacity: 0;
+}
+.game2{
+	margin-top: -9%;
+	position: fixed;
+	left: 37%;
+	opacity: 1;
+}
+/*@media 
+	margin-top: 31%;
+	margin-left: 36%;
